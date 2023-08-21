@@ -27,18 +27,24 @@ string[] FindGivenLengthStrings(int stringLength, string[] stringArray){
 }
 //////////////////////////////////
 Console.Clear();
-//ex1
+
+//example1
 string[] inputString = {"Hello", "2", "world", ":-)"};
-Console.WriteLine("[ "+"Hello", "2", "world", ":-)"+" ]");
+var str = string.Join(" ,", inputString);
+Console.WriteLine("[ "+ str + " ]");
 string tempStr = string.Join(", ", FindGivenLengthStrings(3, inputString));
 Console.WriteLine("[ "+tempStr+" ]");
-//ex2
+
+//example2
 string[] inputString1 = {"1234", "1567", "-2", "computer science"};
-Console.WriteLine("[ "+inputString1+" ]");
+var str1 = string.Join(" ,", inputString1);
+Console.WriteLine("[ "+ str1 + " ]");
 tempStr = string.Join(", ", FindGivenLengthStrings(3, inputString1));
 Console.WriteLine("[ "+tempStr+" ]");
-//ex3
+
+//example3
 string[] inputString2 = {"Russia", "Denmark", "Kazan"};
-Console.WriteLine("[ "+inputString2+" ]");
+var str2 = string.Join(" ,", inputString2);
+Console.WriteLine("[ "+ str2 + " ]");
 tempStr = string.Join(", ", FindGivenLengthStrings(3, inputString2));
 Console.WriteLine("[ "+tempStr+" ]");
